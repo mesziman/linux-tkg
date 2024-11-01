@@ -1,15 +1,11 @@
 name: Build Ubuntu kernel
 on:
-  workflow_call:
-    inputs:
-      _cpusched:
-        required: true
-        type: string
+  workflow_dispatch:
+
+
 
 
 env:
-  _waydroid: "true"
-  _processor_opt: "generic"
   _distro: "Ubuntu"
   _git_mirror: "github.com"
   _logging_use_script: "no"
@@ -27,8 +23,6 @@ env:
 
 jobs:
   build-kernel:
-    env:
-      _cpusched: ${{ inputs._cpusched }}
 
     runs-on: ubuntu-latest
 
