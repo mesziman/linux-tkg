@@ -7,7 +7,7 @@ on:
 
 env:
   _distro: "Ubuntu"
-  _git_mirror: "github.com"
+  _git_mirror: "kernel.org"
   _logging_use_script: "no"
   _install_after_building: "no"
   _debugdisable: "true"
