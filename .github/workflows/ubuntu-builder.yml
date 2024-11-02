@@ -29,7 +29,7 @@ jobs:
       #   run: |
       #     touch "${_modprobeddb_db_path}"
       #     echo "${_modprobeddb_db_path}"
-
+      - uses: actions/checkout@v4
       - name: Install deps and compile kernel
         run: yes '' | ./install.sh install
         # run: |
