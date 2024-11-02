@@ -13,7 +13,6 @@ env:
   _debugdisable: "true"
   _noccache: "true"
   _STRIP: "true"
-  _kernel_on_diet: "true"
   _kernel_work_folder: "/tmp"
   _kernel_source_folder: "/tmp"
 
@@ -25,8 +24,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkount linux-tkg
-        uses: actions/checkout@v4
 
       # - name: "[debug] make dummy modprobed-db file for faster ci"
       #   run: |
