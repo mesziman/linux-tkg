@@ -4,7 +4,7 @@
 set -e
 
 ###################### Definition of helper variables and functions
-
+rm -rf /opt/hostedtoolcache
 _where=`pwd`
 srcdir="$_where"
 
