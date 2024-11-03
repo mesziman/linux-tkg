@@ -4,7 +4,7 @@
 set -e
 
 ###################### Definition of helper variables and functions
-rm -rf /opt/hostedtoolcache
+
 _where=`pwd`
 srcdir="$_where"
 
@@ -147,7 +147,8 @@ if [ "$1" = "install" ] || [ "$1" = "config" ]; then
 fi
 
 if [ "$1" = "install" ]; then
-
+  msg2 "removing rm -rf /opt/hostedtoolcache"
+  rm -rf /opt/hostedtoolcache
   if [ -e "${_where}/winesync.rules" ]; then
     msg2 "Installing udev rule for winesync"
     sudo cp "${_where}"/winesync.rules /etc/udev/rules.d/winesync.rules
